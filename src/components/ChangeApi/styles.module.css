@@ -1,0 +1,27 @@
+.button {
+  position: fixed;
+  top: 50px;
+  left: 30px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  height: auto;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 10px 10px 60px #aaa;
+  transition: all 500ms;
+}
+
+.button:hover {
+  color: white;
+  background-color: rgb(37, 39, 167);
+  transform: scale(1.2);
+}
+.button p {
+  font-weight: 800;
+  font-size: 12px;
+  font-family: Poppins, sans-serif;
+}
