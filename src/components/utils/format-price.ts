@@ -5,5 +5,7 @@ export default function formatPrice(price: number) {
     newPrice = `${newPrice}.00`;
   }
 
-  return newPrice.toString().replace(".", ",");
+  const [value, cents] = newPrice.split(".");
+
+  return `${value},${cents.padEnd(2, "0")}`;
 }
